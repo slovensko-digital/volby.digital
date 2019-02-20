@@ -39,12 +39,15 @@
             maximumInputLength: 2,
             data: results,
             placeholder: "napr. Banská Bystrica",
+            width: 'resolve'
         });
     }
 
     $(document).on('focus', '.select2-selection', function (e) {
-
-        $(this).parent().parent().prev().select2("open");
+        if (e.originalEvent)
+        {
+            $(this).parent().parent().prev().select2("open");
+        }
     });
 
     function formValidation() {
@@ -61,7 +64,13 @@
         if (getInputValue("address").length < 5) resultWithError(".validation.address")
         if (getInputValue("name").length < 6) resultWithError(".validation.name")
         if (getInputValue("zip").length < 4) resultWithError(".validation.zip")
-        if (parseInt(getInputValue("city") * 1) === 0) resultWithError(".validation.city")
+
+        if (!(parseInt(getInputValue("city")) > 0)) // neda sa vycentrovat
+        {
+            $(".section-request [name=city]").select2('destroy');
+            handleCities();
+            resultWithError(".validation.city")
+        }
         if (getInputValue("ssn").length < 9) resultWithError(".validation.ssn")
 
         return valid
