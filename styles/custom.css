@@ -100,7 +100,8 @@ h2 {
     }
 
     body:before {
-        margin-bottom: 0;
+        width: auto;
+        margin: 0 -15px;
     }
 
     .navigation {
