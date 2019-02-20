@@ -64,7 +64,7 @@
             return $(".section-request [name=" + t + "]").val()
         };
 
-        let text = `Žiadosť o vydanie hlasovacieho preukazu pre voľby prezidenta Slovenskej republiky v roku 2019.
+        let text = `Žiadosť o vydanie hlasovacieho preukazu pre voľby prezidenta SR v roku 2019.
 
 Podľa §46 zákona č.180/2014 Z.z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o vydanie hlasovacieho preukazu pre voľby prezidenta Slovenskej republiky v roku 2019.
 
@@ -110,7 +110,8 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
         text = text.replace("$6", getInputValue("corresponding-address") + ", " + getInputValue("corresponding-city") + ", " + getInputValue("corresponding-zip") + ", " + getInputValue("corresponding-country"))
         text = text.replace("$7", getInputValue("responsible-name") + ", s číslom OP: " + getInputValue("responsible-id") + ".");
 
-        $("#generated").val(text)
+        $("#generated").val(text);
+        return text;
     }
 
     function setQuery(obj) {
@@ -224,6 +225,11 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
 
                 $(".section-request-button, .section-request section").hide();
                 $("#generated, .last-steps").show();
+
+                let email = "mailto:" + result.email;
+                email += "?subject=" + encodeURIComponent("Žiadosť o vydanie hlasovacieho preukazu na voľby prezidenta SR 2019");
+                email += "&body=" + encodeURIComponent(fillTextareaRequest());
+                $(".email-button").attr("href", email);
             }
         });
 

@@ -185,7 +185,8 @@ textarea:focus {
 }
 
 input[type="submit"],
-button {
+button,
+.btn {
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
@@ -201,7 +202,9 @@ button {
 input[type="submit"]:hover,
 button:hover,
 input[type="submit"]:focus,
-button:focus {
+button:focus,
+.btn:hover,
+.btn:focus {
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     color: #fff;
