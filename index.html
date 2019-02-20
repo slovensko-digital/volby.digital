@@ -43,7 +43,6 @@
 	<script src="./js/less.min.js"></script>
 
 </head><body>
-
 	<nav>
 		<ol class="navigation wrapper-wide">
 			<li id="info"><div>1</div><br /><span>Úvod</span></li>
@@ -209,23 +208,21 @@
 		<button class="section-request-button">Vytvoriť žiadosť, ktorú pošlete Vašej obci</button>
 
         <section class="hidden last-steps">
-            <h2>Posledné kroky</h2>
-			<a href="mailto:" class="email-button btn">Pošlite žiadosť emailom automaticky</a>
-			<br /><br />alebo ..<br />
+            <h2>Odoslanie žiadosti</h2>
+			<p><strong>Upozornenie:</strong> Keďže zoznam všetkých emailových adries obcí pre tento účel je veľmi problematické získať, nevieme úplne garantovať ich správnosť. Prosíme Vás, uistite sa, že dostane potvrdenie o prijatí žiadosti od obce v priebehu najbližších dní. V&nbsp;opačnom prípade kontaktujte obec telefonicky alebo osobne.</p>
+			<a href="mailto:" class="email-button btn">Otvoriť pripravenú žiadosť v emailovom klientovi</a>
+			<br /><br /><strong>alebo</strong><br />
 
-            <ol>
-                <li>Skopírujte nasledovnú žiadosť &nbsp;&nbsp;&nbsp;<img id="clipboard-request" src="./images/copy.png" alt="Skopírujte do clipboardu" />
-                    &nbsp;<small class="hidden">Skopírované!</small>
+            <p>1. Skopírujte nasledovnú žiadosť &nbsp;&nbsp;&nbsp;<img id="clipboard-request" src="./images/copy.png" alt="Skopírujte do clipboardu" />
+				&nbsp;<small class="hidden">Skopírované!</small></p>
+
                     <textarea id="generated" class="hidden"></textarea>
-                </li>
-                <li>
-					Pošlite na adresu Vašej obce: <strong id="last-steps-email">Naneštastie nemáme, musíte ho nájsť na webe Vašej obce</strong>
+			<p>2. Pošlite na adresu Vašej obce: <strong id="last-steps-email">Naneštastie nemáme, musíte ho nájsť na webe Vašej obce</strong>
 					&nbsp;&nbsp;&nbsp;<img id="clipboard-email" src="./images/copy.png" alt="Skopírujte do clipboardu" />
 					&nbsp;<small class="hidden">Skopírované!</small>
-				</li>
-				<li><strong>Ak do dvoch-troch dní neobdržíte emailové potvrdenie, volajte na úrad!</strong></li>
-                <li>Nezabudnite ísť voliť a zdielať stránku volby.digital na sociálnych sieťach.</li>
-			</ol>
+			</p>
+
+            <p><strong>Nezabudnite ísť voliť a <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvolby.digital">zdielať stránku volby.digital</a> na sociálnych sieťach.</strong></p>
         </section>
 	</aside>
 
@@ -251,19 +248,6 @@
 	<script src="./js/cities.js"></script>
 	<script src="./js/app.js"></script>
 	<script src="./js/ga.js"></script>
-
-	<!-- Facebook Pixel Code -->
-	<script>
-	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-	document,'script','//connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '658957580832480');
-	fbq('track', "PageView");
-	</script>
-	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=658957580832480&ev=PageView&noscript=1"/></noscript>
-	<!-- End Facebook Pixel Code -->
 
 	<br /><br /><br />
 </body></html>
