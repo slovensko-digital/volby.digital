@@ -120,6 +120,9 @@ Hlasovací preukaz prosím vydať nasledovnej splnocnenej osobe priamo v mieste 
         text += `
 
 Poprosím Vás o hlasovací preukaz platný pre dni 16. marca 2019 a 30. marca 2019.
+
+Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdržali.
+
 Ďakujem.`
 
         text = text.replace("$1", getInputValue("name"))
