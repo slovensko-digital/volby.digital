@@ -1795,7 +1795,9 @@
                 'zbehy':['Obecný úrad','','Zbehy','69','951 42','Zbehy','obec@zbehy.sk','037','779 38 12,779 30 48','0903 718 326 ','Zbehy','1',''],
                 'zirany':['Obecný úrad','','Žirany','194','951 74','Žirany','obec.zirany@stonline.sk','037','631 82 32,631 88 41,42','0903 203 979','Žirany','0',''],
                 'zitavce':['Obecný úrad','','Hlavná','130','951 63','Žitavce','starosta@zitavce.sk','037','788 20 07','0917 173 923','Žitavce','1','']},
-            'Okres Komárno':{'1komarno':['Mestský úrad','','Nám. Gen. Klapku ','1','945 01','Komárno','info@komarno.sk','035','770 17 54,285 12 21','','Komárno','0',''],
+            'Okres Komárno':{
+                '1komarno':['Mestský úrad','','Nám. Gen. Klapku ','1','945 01','Komárno','info@komarno.sk','035','770 17 54,285 12 21','','Komárno','0',''],
+                'komarno-dulov-dvor':['Mestský úrad','','Nám. Gen. Klapku ','1','945 01','Komárno','info@komarno.sk','035','770 17 54,285 12 21','','Komárno - Ďulov Dvor','0',''],
                 'bajc':['Obecný úrad','','Bajč','130','946 54','Bajč','ocubajc@stonline.sk','035','768 11 39','0918 458 076','Bajč','1',''],
                 'batorove-kosihy':['Obecný úrad','','Bátorove Kosihy','873','946 34','Bátorové Kosihy','starosta@batorovekosihy.sk','035','761 17 20,21,22,30,31','0905 625 600','Bátorove Kosihy','0',''],
                 'bodza':['Obecný úrad','','Bodza','108','946 16','Bodza','bodza@real-net.sk','035','778 00 22','0905 400 881','Bodza','0',''],
