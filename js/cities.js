@@ -1194,7 +1194,7 @@
             'Okres Bratislava 3':{'1bratislava-nove-mesto':['Miestny úrad','','Junácka','1','832 91','Bratislava 3','organizacne@banm.sk','02','4925 3111','','Bratislava - Nové Mesto','1',''],
                 'bratislava-raca':['Miestny úrad','','Kubačova','21','831 06','Bratislava 3','info@raca.sk','02','4920 05 11,4911 24 11,12,13,15,16,17,31','','Bratislava - Rača','0',''],
                 'bratislava-vajnory':['Miestny úrad','','Roľnícka','109','831 07','Bratislava 36','gzemanova@vajnory.sk','02','4371 24 94,4822 44 48,4822 44 12,4371 22 80','','Bratislava - Vajnory','1','']},
-            'Okres Bratislava 4':{'1bratislava-karlova-ves':['Miestny úrad','','Námestie sv. Františka','8','842 62','Bratislava 4','organizacne@karlovaves.sk','02','6025 91 11','','Bratislava - Karlova Ves ','0',''],
+            'Okres Bratislava 4':{'1bratislava-karlova-ves':['Miestny úrad','','Námestie sv. Františka','8','842 62','Bratislava 4','hlasovacipreukaz@karlovaves.sk','02','6025 91 11','','Bratislava - Karlova Ves ','0',''],
                 'bratislava-devin':['Miestny úrad','','Kremeľská','39','841 10','Bratislava 46','starostka@devin.sk','02','6020 25 11,12,6020 25 17','','Bratislava - Devín','0',''],
                 'bratislava-devinska-nova-ves':['Miestny úrad','','Novoveská','17/A','843 10','Bratislava 49','ingrid.zatkova@mudnv.sk','02','6020 14 00,01 - 41','0917 787 673,0917 817 230','Bratislava - Devínska Nová Ves','1',''],
                 'bratislava-dubravka':['Miestny úrad','','Žatevná','2','841 02','Bratislava 4','volby@dubravka.sk','02','6428 24 28,6920 25 01,6920 25 24','0903 424 896','Bratislava - Dúbravka','1',''],
