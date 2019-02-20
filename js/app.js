@@ -56,15 +56,21 @@
             return $(".section-request [name=" + t + "]").val()
         };
         const resultWithError = function(selector) {
-            $(selector).show();
-            $(selector).closest('label').addClass('error');
-            valid = false
+            var element = $(selector + ', ' + selector + '-message');
+            var label = element.closest('label');
+
+            if (label.is(':visible'))
+            {
+                element.show();
+                label.addClass('error');
+                valid = false
+            }
         };
         $('label').removeClass('error');
         $(".validation").hide();
-        if (getInputValue("address").length < 5) resultWithError(".validation.address")
-        if (getInputValue("name").length < 6) resultWithError(".validation.name")
-        if (getInputValue("zip").length < 4) resultWithError(".validation.zip")
+        if (getInputValue("address").length < 5) resultWithError(".validation.address");
+        if (getInputValue("name").length < 6) resultWithError(".validation.name");
+        if (getInputValue("zip").length < 4) resultWithError(".validation.zip");
 
         if (!(parseInt(getInputValue("city")) > 0)) // neda sa vycentrovat
         {
@@ -72,8 +78,16 @@
             handleCities();
             resultWithError(".validation.city")
         }
-        if (getInputValue("ssn").length < 9) resultWithError(".validation.ssn")
-        if (getInputValue("citizenship").length === 0) resultWithError(".validation.citizenship")
+        if (getInputValue("ssn").length < 9) resultWithError(".validation.ssn");
+        if (getInputValue("citizenship").length === 0) resultWithError(".validation.citizenship");
+
+        if (getInputValue("corresponding-address").length === 0) resultWithError(".validation.corresponding-address");
+        if (getInputValue("corresponding-city").length === 0) resultWithError(".validation.corresponding-city");
+        if (getInputValue("corresponding-zip").length < 4) resultWithError(".validation.corresponding-zip");
+        if (getInputValue("corresponding-country").length === 0) resultWithError(".validation.corresponding-country");
+
+        if (getInputValue("responsible-name").length === 0) resultWithError(".validation.responsible-name");
+        if (getInputValue("responsible-id").length === 0) resultWithError(".validation.responsible-id");
 
         return valid
     }

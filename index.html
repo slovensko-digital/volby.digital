@@ -150,7 +150,7 @@
 			<label>
 				<div class="label">Štátna príslušnosť</div>
 				<div class="hint">napr. slovenská</div>
-				<div class="hidden validation citizenship"><mark>Zadajte Vašu štátnu príslušnosť</mark></div>
+				<div class="hidden validation citizenship"><mark>Nezadali ste Vašu štátnu príslušnosť</mark></div>
 				<input name="citizenship" type="text" value="slovenská" />
 			</label>
 		</section>
@@ -185,24 +185,28 @@
 			<label>
 				<div class="label">Ulica a číslo</div>
 				<div class="hint">napr. Jiřího</div>
+				<div class="hidden validation corresponding-address-message"><mark>Nezadali ste adresu</mark></div>
 				<input name="corresponding-address" type="text" />
 			</label>
 
 			<label>
 				<div class="label">Obec</div>
 				<div class="hint">napr. Praha</div>
+				<div class="hidden validation corresponding-city"><mark>Nezadali ste obec</mark></div>
 				<input name="corresponding-city" type="text" />
 			</label>
 
 			<label>
 				<div class="label">PSČ</div>
 				<div class="hint">napr. 11011</div>
+				<div class="hidden validation corresponding-zip"><mark>Zadali ste príliš krátke PSČ</mark></div>
 				<input name="corresponding-zip" type="text" />
 			</label>
 
 			<label>
 				<div class="label">Štát</div>
 				<div class="hint">napr. Česko</div>
+				<div class="hidden validation corresponding-country"><mark>Nezadali ste štát</mark></div>
 				<input name="corresponding-country" type="text" />
 			</label><br />
 		</section>
@@ -212,12 +216,14 @@
 			<label>
 				<div class="label">Meno a prezvisko splnomocnenej osoby</div>
 				<div class="hint">napr. Katarína Múdra</div>
+				<div class="hidden validation responsible-name"><mark>Zadali ste neplatné meno, musí byť skutočné</mark></div>
 				<input name="responsible-name" type="text" />
 			</label>
 
 			<label>
 				<div class="label">Číslo občianskeho preukazu splnomocnenej osoby</div>
 				<div class="hint">napr. XX123456</div>
+				<div class="hidden validation responsible-id"><mark>Zadali ste príliš krátke číslo občianskeho preukazu</mark></div>
 				<input name="responsible-id" type="text" />
 			</label>
 		</section>
