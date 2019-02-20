@@ -1798,6 +1798,8 @@
             'Okres Komárno':{
                 '1komarno':['Mestský úrad','','Nám. Gen. Klapku ','1','945 01','Komárno','info@komarno.sk','035','770 17 54,285 12 21','','Komárno','0',''],
                 'komarno-dulov-dvor':['Mestský úrad','','Nám. Gen. Klapku ','1','945 01','Komárno','info@komarno.sk','035','770 17 54,285 12 21','','Komárno - Ďulov Dvor','0',''],
+                'komarno-nova-straz':['Mestský úrad','','Nám. Gen. Klapku ','1','945 01','Komárno','info@komarno.sk','035','770 17 54,285 12 21','','Komárno - Nová Stráž','0',''],
+                'komarno-kava':['Mestský úrad','','Nám. Gen. Klapku ','1','945 01','Komárno','info@komarno.sk','035','770 17 54,285 12 21','','Komárno - Kava','0',''],
                 'bajc':['Obecný úrad','','Bajč','130','946 54','Bajč','ocubajc@stonline.sk','035','768 11 39','0918 458 076','Bajč','1',''],
                 'batorove-kosihy':['Obecný úrad','','Bátorove Kosihy','873','946 34','Bátorové Kosihy','starosta@batorovekosihy.sk','035','761 17 20,21,22,30,31','0905 625 600','Bátorove Kosihy','0',''],
                 'bodza':['Obecný úrad','','Bodza','108','946 16','Bodza','bodza@real-net.sk','035','778 00 22','0905 400 881','Bodza','0',''],
