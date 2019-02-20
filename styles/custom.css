@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 600px;
+    max-width: 610px;
     margin: 0 auto;
 }
 .wrapper-wide {
@@ -31,6 +31,7 @@ nav {
     padding: 10px 0;
     border-bottom: 1px solid #b9b9b9;
     text-align: center;
+    display: none;
 }
 nav ul {
     padding: 0;
@@ -42,23 +43,34 @@ nav ul {
     font-weight: 400;
     cursor: pointer;
     text-align: center;
-    margin: 0 29px;
+    margin: 0 15px;
     width: 92px;
     font-size: 14px;
+    color: #638b34;
 }
 .navigation li div {
     display: inline-block;
-    border: 30px;
-    background: #83b443;
-    color: white;
     padding: 5px 14px;
     border-radius: 30px;
     margin-bottom: 5px;
+
+    background: white;
+    color: #638b34;
+    border: 1px solid #83b443;
+}
+.navigation li span {
+    display: block;
 }
 .navigation .selected {
     background: white;
     color: black;
 }
+
+.navigation .selected div {
+    background: #83b443;
+    color: white;
+}
+
 .navigation li:hover {
     color: #4f94ff;
 }
@@ -70,32 +82,59 @@ nav ul {
 .navigation .after div,
 .navigation .after:hover div {
     background: white;
-    color: black;
+    color: #8c8c8c;
     border: 1px solid #b9b9b9;
 }
+
+h2 {
+    margin-top: 40px;
+}
+
 @media (max-width: 700px) {
-    .navigation:before {
-        display: none;
+    h1 {
+        margin-top: 30px;
     }
-    ol {
-        padding: 0 15px 10px !important;
+
+    h2 {
+        margin-top: 30px;
     }
-    nav {
-        padding: 5px;
-        text-align: center;
+
+    body:before {
+        margin-bottom: 0;
     }
+
+    .navigation {
+        padding: 0;
+    }
+
     .navigation li {
-        width: 14%;
+        display: none;
+        width: 100%;
+        text-align: left;
         margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        pointer-events: none;
     }
-    .navigation li span {
-        display: none;
+
+    .navigation li.selected span {
+        display: inline-block;
     }
-    .break {
-        display: none;
+
+    .navigation li.selected div {
+        display: inline-block;
+        background: white;
+        color: black;
+        border: none;
+        padding-left: 0;
     }
-    .navigation li div {
-        padding: 9px 18px;
+
+    .navigation li.selected div:after {
+        content: '/5';
+    }
+
+    .navigation li.selected {
+        display: block;
     }
 }
 ul,
@@ -131,6 +170,7 @@ ol {
     width: 47%;
     margin: 1.5%;
 }
+
 .section-info img {
     margin: 11px 7px 4px 0;
     vertical-align: middle;
@@ -217,4 +257,8 @@ ol {
 #clipboard-email:hover,
 #clipboard-request:hover {
     opacity: 0.9;
+}
+
+.second-round {
+    margin-top: 15px;
 }
