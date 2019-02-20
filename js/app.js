@@ -8,7 +8,7 @@
                 Object.keys(window.cities[kraj][okres]).forEach(function(mesto){
                     results.push({
                         id: mesto,
-                        text: window.cities[kraj][okres][mesto][10],
+                        text: window.cities[kraj][okres][mesto][10] + (window.cities[kraj][okres][mesto][13] ? (' (' + okres + ')') : ''),
                         mesto: window.cities[kraj][okres][mesto][10],
                         kraj: kraj,
                         okres: okres,
