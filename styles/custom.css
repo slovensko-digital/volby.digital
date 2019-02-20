@@ -285,3 +285,12 @@ ol {
 :-moz-placeholder { /* Firefox 18- */
     color: #d6d6d6;
 }
+
+.footer-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+}
