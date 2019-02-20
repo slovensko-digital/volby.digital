@@ -208,7 +208,7 @@ ol {
 .section-whom button,
 .section-how button {
     width: 500px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     text-align: left;
 }
 @media (max-width: 700px) {
@@ -330,7 +330,7 @@ label.error .select2-container--default .select2-selection--single {
     background-color: #ffe0e3;
 }
 
-.form h2 {
+h2 {
     font-family: inherit;
     font-size: 32px;
     line-height: 1.25;
