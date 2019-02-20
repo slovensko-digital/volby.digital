@@ -252,7 +252,12 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
         });
 
         $(".email-button").on("click", function() {
-            ga('send', 'action-send')
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'Ziadost',
+                eventAction: 'send',
+                eventLabel: 'action-send'
+            });
         });
 
         $("#clipboard-request").on("click", function(){
