@@ -131,7 +131,7 @@ h2 {
     }
 
     .navigation li.selected div:after {
-        content: '/4';
+        content: '/3';
     }
 
     .navigation li.selected {

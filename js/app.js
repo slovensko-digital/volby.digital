@@ -228,7 +228,7 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
                 $("html, body").animate({ scrollTop: 0 }, "slow");
             } else {
                 fillTextareaRequest();
-                $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+                $("html, body").animate({ scrollTop: 0 }, "slow");
                 $(".last-steps").show();
 
                 const result = handleCities($(".section-request [name=city]").val());
