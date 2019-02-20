@@ -3,11 +3,13 @@
     function handleCities(city) {
         let results = [];
 
+        var city_id = 1;
+
         const cities = Object.keys(window.cities).forEach(function(kraj){
             Object.keys(window.cities[kraj]).forEach(function(okres){
                 Object.keys(window.cities[kraj][okres]).forEach(function(mesto){
                     results.push({
-                        id: mesto,
+                        id: city_id++,
                         text: window.cities[kraj][okres][mesto][10] + (window.cities[kraj][okres][mesto][13] ? (' (' + okres + ')') : ''),
                         mesto: window.cities[kraj][okres][mesto][10],
                         kraj: kraj,
@@ -20,6 +22,8 @@
 
         if (city) {
             let result;
+
+            city = parseInt(city);
 
             $(results).filter(function(index, element){
                 return element.id === city
