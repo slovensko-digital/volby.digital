@@ -238,12 +238,15 @@ Poprosím Vás o hlasovací preukaz platný pre dni 16. marca 2019 a 30. marca 2
             if (formValidation() !== true) {
                 $("html, body").animate({ scrollTop: 0 }, "slow");
             } else {
-                fillTextareaRequest()
+                fillTextareaRequest();
                 $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-                $(".last-steps").show()
+                $(".last-steps").show();
 
-                const result = handleCities($(".section-request [name=city]").val())
-                $("#last-steps-email").text(result.email)
+                const result = handleCities($(".section-request [name=city]").val());
+                $("#last-steps-email").text(result.email);
+
+                $(".section-request-button, .section-request section").hide();
+                $("#generated, .last-steps").show();
             }
         })
 

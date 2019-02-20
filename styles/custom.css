@@ -6,6 +6,9 @@
     max-width: 800px;
     margin: 0 auto;
 }
+.break {
+    display: block;
+}
 .right {
     float: right;
 }
@@ -75,19 +78,24 @@ nav ul {
         display: none;
     }
     ol {
-        padding: 15px 0;
+        padding: 0 0 10px !important;
     }
     nav {
-        padding: 10px;
+        padding: 5px;
         text-align: center;
     }
     .navigation li {
-        font-size: 14px;
-        width: 19%;
+        width: 14%;
         margin: 0;
     }
     .navigation li span {
         display: none;
+    }
+    .break {
+        display: none;
+    }
+    .navigation li div {
+        padding: 9px 18px;
     }
 }
 ul,
@@ -112,14 +120,15 @@ ol {
     box-shadow: 0 2px 0 #618630;
 }
 .section-info .colored {
-    color: #676767;
+    color: #3a3a3a;
     font-weight: 200;
     font-size: 15px;
     line-height: 19px;
     margin-bottom: 16px;
 }
 .section-info .left {
-    width: 50%;
+    width: 47%;
+    margin: 1.5%;
 }
 .section-info img {
     margin: 11px 7px 4px 0;
