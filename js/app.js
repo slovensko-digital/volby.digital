@@ -42,6 +42,11 @@
         });
     }
 
+    $(document).on('focus', '.select2-selection', function (e) {
+
+        $(this).parent().parent().prev().select2("open");
+    });
+
     function formValidation() {
         let valid = true;
         const getInputValue = function(t) {
@@ -56,7 +61,7 @@
         if (getInputValue("address").length < 5) resultWithError(".validation.address")
         if (getInputValue("name").length < 6) resultWithError(".validation.name")
         if (getInputValue("zip").length < 4) resultWithError(".validation.zip")
-        if (getInputValue("city").length < 3) resultWithError(".validation.city")
+        if (parseInt(getInputValue("city") * 1) === 0) resultWithError(".validation.city")
         if (getInputValue("ssn").length < 9) resultWithError(".validation.ssn")
 
         return valid
