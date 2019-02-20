@@ -183,8 +183,6 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
             displaySlide(2);
         } else if (step === "3") {
             displaySlide(3);
-        } else if (step === "4") {
-            displaySlide(4);
 
             if (getQuery("whom") === "someone") {
                 $(".responsible-person").show()
@@ -199,10 +197,10 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
 
             $(".with-address").show()
 
+        } else if (step === "4") {
+            displaySlide(4) // nema trvaly pobyt na uzemi SR
         } else if (step === "5") {
-            displaySlide(5) // nema trvaly pobyt na uzemi SR
-        } else if (step === "6") {
-            displaySlide(6) // zoberie si to osobne
+            displaySlide(5) // zoberie si to osobne
         }
     }
 
