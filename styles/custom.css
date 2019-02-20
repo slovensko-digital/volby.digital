@@ -125,6 +125,10 @@ h2 {
         padding-left: 0;
     }
 
+    .navigation li.selected div:after {
+        content: '/5';
+    }
+
     .navigation li.selected {
         display: block;
     }
