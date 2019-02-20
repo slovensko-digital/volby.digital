@@ -160,12 +160,12 @@ input[type="text"],
 textarea {
     padding: 14px 13px 14px;
     transition: all 0.2s ease-out;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #cacaca;
     width: 100%;
     font-weight: 400;
     color: #000;
     border-radius: 10px;
-    background: #f8f8f8;
+    background: white;
 }
 
 input[type="password"]:hover,

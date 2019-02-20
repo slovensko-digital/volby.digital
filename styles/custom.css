@@ -233,7 +233,7 @@ ol {
     border: 1px solid #dcdcdc;
     position: relative;
     top: -3px;
-    background: #f8f8f8;
+    background: white;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #000000;
@@ -241,8 +241,14 @@ ol {
     font-weight: 400;
 }
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #797979;
+    color: #d6d6d6;
 }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 12px;
+    right: 8px;
+}
+
 @media (max-width: 700px) {
     .select2-container {
         width: 100% !important;
@@ -262,4 +268,17 @@ ol {
 
 .second-round {
     margin-top: 15px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #d6d6d6;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #d6d6d6;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #d6d6d6;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #d6d6d6;
 }
