@@ -60,7 +60,7 @@
             $(selector).closest('label').addClass('error');
             valid = false
         };
-
+        $('label').removeClass('error');
         $(".validation").hide();
         if (getInputValue("address").length < 5) resultWithError(".validation.address")
         if (getInputValue("name").length < 6) resultWithError(".validation.name")
@@ -73,6 +73,7 @@
             resultWithError(".validation.city")
         }
         if (getInputValue("ssn").length < 9) resultWithError(".validation.ssn")
+        if (getInputValue("citizenship").length === 0) resultWithError(".validation.citizenship")
 
         return valid
     }
@@ -93,7 +94,7 @@ Rodné číslo: $2
 Ulica a číslo: $3
 Mesto: $4
 PSČ: $5
-Štátna príslušnosť: Slovenská`;
+Štátna príslušnosť: $8`;
 
         if (getQuery("whom") === "home") {
             text += `
@@ -121,6 +122,7 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
         text = text.replace("$1", getInputValue("name"));
         text = text.replace("$2", getInputValue("ssn"));
         text = text.replace("$3", getInputValue("address"));
+        text = text.replace("$8", getInputValue("citizenship"));
 
         const city = handleCities($(".section-request [name=city]").val());
         text = text.replace("$4", city.mesto);
