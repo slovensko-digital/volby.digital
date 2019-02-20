@@ -209,11 +209,11 @@ ol {
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: #797979;
 }
-#clipboard-text,
+#clipboard-email,
 #clipboard-request {
     cursor: pointer;
 }
-#clipboard-text:hover,
+#clipboard-email:hover,
 #clipboard-request:hover {
     opacity: 0.9;
 }

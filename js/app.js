@@ -1,7 +1,7 @@
 (function(){
 
     function handleCities(city) {
-        let results = []
+        let results = [];
 
         const cities = Object.keys(window.cities).forEach(function(kraj){
             Object.keys(window.cities[kraj]).forEach(function(okres){
@@ -16,44 +16,18 @@
                     })
                 })
             })
-        })
+        });
 
         if (city) {
-            let result
+            let result;
 
             $(results).filter(function(index, element){
                 return element.id === city
             }).each(function(index, element) {
                 result = element
-            })
+            });
 
             return result
-        }
-
-        function matchCustom(params, data) {
-            // If there are no search terms, return all of the data
-            if ($.trim(params.term) === '') {
-                return data;
-            }
-
-            // Do not display the item if there is no 'text' property
-            if (typeof data.text === 'undefined') {
-                return null;
-            }
-
-            // `params.term` should be the term that is used for searching
-            // `data.text` is the text that is displayed for the data object
-            if (data.text.indexOf(params.term) > -1) {
-                var modifiedData = $.extend({}, data, true);
-                modifiedData.text += ' (matched)';
-
-                // You can return modified objects from here
-                // This includes matching the `children` how you want in nested data sets
-                return modifiedData;
-            }
-
-            // Return `null` if the term should not be displayed
-            return null;
         }
 
         $(".section-request [name=city]").select2({
@@ -65,16 +39,16 @@
     }
 
     function formValidation() {
-        let valid = true
+        let valid = true;
         const getInputValue = function(t) {
             return $(".section-request [name=" + t + "]").val()
-        }
+        };
         const resultWithError = function(selector) {
-            $(selector).show()
+            $(selector).show();
             valid = false
-        }
+        };
 
-        $(".validation").hide()
+        $(".validation").hide();
         if (getInputValue("address").length < 5) resultWithError(".validation.address")
         if (getInputValue("name").length < 6) resultWithError(".validation.name")
         if (getInputValue("zip").length < 4) resultWithError(".validation.zip")
@@ -88,7 +62,7 @@
     function fillTextareaRequest() {
         const getInputValue = function(t) {
             return $(".section-request [name=" + t + "]").val()
-        }
+        };
 
         let text = `Žiadosť o vydanie hlasovacieho preukazu pre voľby prezidenta Slovenskej republiky v roku 2019.
 
@@ -100,7 +74,7 @@ Rodné číslo: $2
 Ulica a číslo: $3
 Mesto: $4
 PSČ: $5
-Štátna príslušnosť: Slovenská`
+Štátna príslušnosť: Slovenská`;
 
         if (getQuery("whom") === "home") {
             text += `
@@ -123,32 +97,32 @@ Poprosím Vás o hlasovací preukaz platný pre dni 16. marca 2019 a 30. marca 2
 
 Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdržali.
 
-Ďakujem.`
+Ďakujem.`;
 
-        text = text.replace("$1", getInputValue("name"))
-        text = text.replace("$2", getInputValue("ssn"))
-        text = text.replace("$3", getInputValue("address"))
+        text = text.replace("$1", getInputValue("name"));
+        text = text.replace("$2", getInputValue("ssn"));
+        text = text.replace("$3", getInputValue("address"));
 
-        const city = handleCities($(".section-request [name=city]").val())
-        text = text.replace("$4", city.mesto)
+        const city = handleCities($(".section-request [name=city]").val());
+        text = text.replace("$4", city.mesto);
 
-        text = text.replace("$5", getInputValue("zip"))
+        text = text.replace("$5", getInputValue("zip"));
         text = text.replace("$6", getInputValue("corresponding-address") + ", " + getInputValue("corresponding-city") + ", " + getInputValue("corresponding-zip") + ", " + getInputValue("corresponding-country"))
-        text = text.replace("$7", getInputValue("responsible-name") + ", s číslom OP: " + getInputValue("responsible-id") + ".")
+        text = text.replace("$7", getInputValue("responsible-name") + ", s číslom OP: " + getInputValue("responsible-id") + ".");
 
         $("#generated").val(text)
     }
 
     function setQuery(obj) {
-        const parsed = Qs.parse(location.search.replace("?", ""))
+        const parsed = Qs.parse(location.search.replace("?", ""));
         Object.keys(obj).forEach(function(key) {
             parsed[key] = obj[key]
-        })
+        });
         location.search = Qs.stringify(parsed)
     }
 
     function getQuery(key) {
-        const parsed = Qs.parse(location.search.replace("?", ""))
+        const parsed = Qs.parse(location.search.replace("?", ""));
         return parsed[key]
     }
 
@@ -164,13 +138,13 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
             // links after current one are styled
             $(".navigation li").filter(function(i, el) {
                 return i > n
-            }).addClass("after")
+            }).addClass("after");
 
             // links before current one are links
             $(".navigation li").filter(function(i, el) {
                 return i <= n
-            }).each(function(i, el) {
-                const clickedItem = $(this)
+            }).each(function(i) {
+                const clickedItem = $(this);
                 clickedItem.on("click", function(){ setQuery({ step: i }) })
             });
 
@@ -178,20 +152,20 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
             $("aside").eq(n).show();
         }
 
-        const step = getQuery("step")
+        const step = getQuery("step");
 
         if (!step) {
             setQuery({ step: "0" })
         } else if (step === "0") {
-            displaySlide(0)
+            displaySlide(0);
         } else if (step === "1") {
-            displaySlide(1)
+            displaySlide(1);
         } else if (step === "2") {
-            displaySlide(2)
+            displaySlide(2);
         } else if (step === "3") {
-            displaySlide(3)
+            displaySlide(3);
         } else if (step === "4") {
-            displaySlide(4)
+            displaySlide(4);
 
             if (getQuery("whom") === "someone") {
                 $(".responsible-person").show()
@@ -200,6 +174,8 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
                 // chcem poslat inam
             } else if (getQuery("whom") === "home") {
                 // chcem poslat domov
+            } else if (getQuery("whom") === "personally") {
+                // chcem si ho prevziat osobne
             }
 
             if (getQuery("how") === "email") {
@@ -207,8 +183,6 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
                 // chcem ho poslat emailom
             } else if (getQuery("how") === "list") {
                 // chcem ho poslat postou
-            } else if (getQuery("how") === "personally") {
-                // chcem si ho prevziat osobne
             }
 
         } else if (step === "5") {
@@ -221,7 +195,7 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
     function attachAllHandlers() {
         $(".section-info button").first().on("click", function(ev){
             setQuery({ step: "1" })
-        })
+        });
 
         $(".section-request [name=name]").on("keyup", function(ev){
             if (ev.currentTarget.value !== "pepek") return;
@@ -235,7 +209,7 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
             $(".section-request [name=corresponding-zip]").val("11811")
             $(".section-request [name=corresponding-city]").val("Praha")
             $(".section-request [name=corresponding-address]").val("Na Paši")
-        })
+        });
 
         $(".section-request-button").on("click", function(){
             if (formValidation() !== true) {
@@ -251,13 +225,13 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
                 $(".section-request-button, .section-request section").hide();
                 $("#generated, .last-steps").show();
             }
-        })
+        });
 
         $("#clipboard-request").on("click", function(){
             $("#generated").select();
             document.execCommand("copy");
             $("#clipboard-request+small").show();
-        })
+        });
 
         $("#clipboard-email").on("click", function(){
             const $temp = $("<input>");
@@ -266,21 +240,21 @@ Zároveň Vás prosím o spätné emailové potvrdenie, že ste žiadosť obdrž
             document.execCommand("copy");
             $temp.remove();
             $("#clipboard-email+small").show();
-        })
+        });
 
         // trvaly pobyt mam
-        $("#residence-sk").on("click", function() { setQuery({ residence: "sk", step: "2" }) }) // na slovensku
-        $("#residence-out").on("click", function() { setQuery({ residence: "out", step: "5" }) }) // v zahranici
+        $("#residence-sk").on("click", function() { setQuery({ residence: "sk", step: "2" }) }); // na slovensku
+        $("#residence-out").on("click", function() { setQuery({ residence: "out", step: "5" }) }); // v zahranici
 
         // prevezmem
-        $("#whom-home").on("click", function() { setQuery({ whom: "home", step: "3" }) }) // dorucit domov
-        $("#whom-other").on("click", function() { setQuery({ whom: "other", step: "3" }) }) // dorucit inde
-        $("#whom-someone").on("click", function() { setQuery({ whom: "someone", how: "personally", step: "4" }) }) // splnomocnenec
+        $("#whom-home").on("click", function() { setQuery({ whom: "home", step: "3" }) }); // dorucit domov
+        $("#whom-other").on("click", function() { setQuery({ whom: "other", step: "3" }) }); // dorucit inde
+        $("#whom-someone").on("click", function() { setQuery({ whom: "someone", step: "4" }) }); // splnomocnenec
+        $("#whom-personally").on("click", function() { setQuery({ whom: "personally", step: "6" }) }); // osobne
 
         // chcem dorucit
-        $("#how-email").on("click", function() { setQuery({ how: "email", step: "4" }) }) // emailom
-        $("#how-list").on("click", function() { setQuery({ how: "list", step: "4" }) }) // listom
-        $("#how-personally").on("click", function() { setQuery({ how: "personally", step: "6" }) }) // osobne
+        $("#how-email").on("click", function() { setQuery({ how: "email", step: "4" }) }); // emailom
+        $("#how-list").on("click", function() { setQuery({ how: "list", step: "4" }) }); // listom
 
         // chcem dorucit
     }
