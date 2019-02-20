@@ -118,10 +118,11 @@ ol {
     padding: 15px 47px;
     background-color: #83b443;
     box-shadow: 0 2px 0 #618630;
+    width: 100%;
 }
 .section-info .colored {
-    color: #3a3a3a;
-    font-weight: 200;
+    color: #1d1d1d;
+    font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     margin-bottom: 16px;
