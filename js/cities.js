@@ -240,7 +240,7 @@
                 'zavadka':['Obecný úrad','','','126','066 01','Humenné','obeczavadka@stonline.sk','057','776 40 91','0907 993 575','Závadka','1','',1],
                 'zbudske-dlhe':['Obecný úrad','','','90','067 12 ','Koškovce','obec.zb.dlhe@zoznam.sk','057','779 71 62','0915 788 731,0911 346 100','Zbudské Dlhé','0',''],
                 'zubne':['Obecný úrad','','','88','067 33','Papín','obec.zubne@stonline.sk','057','788 07 92-94','0911 648 008','Zubné','0','']},
-            'Okres Kežmarok':{'1kezmarok':['Mestský úrad','','Hlavné Námestie','1','060 01','Kežmarok','primator@kezmarok.sk','052','466 01 01','','Kežmarok','0',''],
+            'Okres Kežmarok':{'1kezmarok':['Mestský úrad','','Hlavné Námestie','1','060 01','Kežmarok','maria.reznicka@kezmarok.sk','052','466 01 01','','Kežmarok','0',''],
                 'abrahamovce':['Obecný úrad','','','56','059 72','Vrbov','abrahamovce@aminet.sk','052','459 04 34 ','0907 958 082,0915 939 576','Abrahámovce','0','',1],
                 'busovce':['Obecný úrad','','','119','059 93','Bušovce','obec.busovce@neton.sk','052','459 16 20','0907 924 056 ','Bušovce','1',''],
                 'cerveny-klastor':['Obecný úrad','','','65','059 06 ','Červený Kláštor','obecck@orangemail.sk','052','418 12 91,92','0905 157 615','Červený Kláštor','1',''],
