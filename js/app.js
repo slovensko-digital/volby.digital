@@ -79,7 +79,7 @@ PSČ: $5
         if (getQuery("whom") === "home") {
             text += `
             
-Preukaz prosím zaslať na trvalý pobyt.`
+Preukaz prosím zaslať na adresu trvalého pobytu.`
         } else if (getQuery("whom") === "other") {
             text += `
             
