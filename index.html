@@ -13,8 +13,8 @@
 	<meta http-equiv="pragma" content="no-cache" />
 
 	<!-- add description of the website -->
-	<title>Vytvorenie hlasovacieho lístka pre voľby prezidenta SR 2019</title>
-	<meta name="description" content="Pripravte si žiadosť cez telefón a bez čítačky; stačí Vám adresa a rodné číslo" />
+	<title>Žiadosť o hlasovací preukaz do volieb prezidenta 2019</title>
+	<meta name="description" content="Pripravte si žiadosť aj na mobile. Trvá to len pár minút." />
 
 	<link href="styles/select2.min.css" rel="stylesheet" />
 	<link href="styles/normalize.css" rel="stylesheet" />
@@ -24,9 +24,9 @@
 	<link href="styles/custom.css" rel="stylesheet" />
 
 	<!-- open graph specification if anyone shares -->
-	<meta property="og:title" content="Vytvorenie hlasovacieho lístka pre voľby prezidenta SR 2019" />
+	<meta property="og:title" content="Žiadosť o hlasovací preukaz do volieb prezidenta 2019" />
 	<meta property="og:image" content="https://volby.digital/images/download.jpeg" />
-	<meta property="og:description" content="Pripravte si žiadosť cez telefón a bez čítačky; stačí Vám adresa a rodné číslo"/>
+	<meta property="og:description" content="Pripravte si žiadosť aj na mobile. Trvá to len pár minút."/>
 	<meta property="og:image:width" content="1200"/>
 	<meta property="og:image:height" content="630"/>
 	<meta property="og:type" content="website"/>
@@ -35,10 +35,9 @@
 	<meta name="twitter:card" content="summary"/>
 	<meta name="twitter:url" content="https://volby.digital/"/>
 	<meta name="twitter:image" content="https://volby.digital/images/download.jpeg"/>
-	<meta name="twitter:title" content="Vytvorenie hlasovacieho lístka pre voľby prezidenta SR 2019" />
-	<meta name="twitter:description" content="Pripravte si žiadosť cez telefón a bez čítačky; stačí Vám adresa a rodné číslo"/>
+	<meta name="twitter:title" content="Žiadosť o hlasovací preukaz do volieb prezidenta 2019" />
+	<meta name="twitter:description" content="Pripravte si žiadosť aj na mobile. Trvá to len pár minút."/>
 
-	<!-- requested by jsuchal; -->
 	<meta name="google-site-verification" content="fAmQ6fh5QcjRgWm0WHnb0PzmrmfUmqNyU7V5bGHgZ6Q" />
 
 	<script src="./js/less.min.js"></script>
@@ -58,7 +57,9 @@
 	<aside class="wrapper hidden section-info">
 		<small>Žiadost o hlasovací preukaz</small>
 
-		<h1>Chcete voliť mimo Vášho trvalého bydliska? <span>Tak si požiadate o hlasovací preukaz.</span></h1>
+		<h1>Chcete voliť mimo Vášho trvalého pobytu? <span>Požiadajte o hlasovací preukaz.</span></h1>
+        <hr />
+        <button style="width: 100%; font-weight: bolder;">Vytvoriť žiadosť o hlasovací preukaz</button>
 		<hr />
 
 		<section class="overflow">
@@ -70,13 +71,12 @@
 				<strong>30. marca 2019</strong>
 			</div>
 			<div class="left">
-				<div class="colored">&check;&nbsp;&nbsp; Vygenerovanie žiadosti trvá približne<span class="break"></span>3 minúty</div>
-				<div class="colored">&check;&nbsp;&nbsp; Žiadost je generovaná vo Vašom<span class="break"></span>prehliadači</div>
+				<div class="colored">&check;&nbsp;&nbsp; Vytvorenie žiadosti trvá približne<span class="break"></span>3 minúty</div>
+				<div class="colored">&check;&nbsp;&nbsp; Žiadost je vytvorená vo Vašom<span class="break"></span>prehliadači</div>
 				<div class="colored">&check;&nbsp;&nbsp; Žiadosť odosielate Vy sami z Vášho<span class="break"></span>emailu</div>
 			</div>
 		</section>
 		<hr />
-		<button>Vytvoriť žiadosť o hlasovací preukaz</button>
 
 		<br /><br /><br /><br />
 		<div class="supported-by">
@@ -107,31 +107,31 @@
 
 	<aside class="wrapper hidden section-residence">
 		<br />
-		<h2>Trvalý pobyt mám ..</h2><br />
-		<button id="residence-sk">Na Slovensku</button><br />
-		<button id="residence-out">Odhlásený zo SR</button>
+		<h2>Trvalý pobyt máte</h2><br />
+		<button id="residence-sk">na Slovensku</button><br />
+		<button id="residence-out">odhlásený zo SR</button>
 	</aside>
 
 	<aside class="wrapper hidden section-whom">
 		<br />
-		<h2>Hlasovací preukaz chcete prevziať..</h2><br />
-		<button id="whom-home">Poštou na adresu trvalého pobytu</button><br />
-		<button id="whom-other">Poštou na inú adresu</button><br />
-		<button id="whom-someone">Splnomocnenou osobou na miestnom úrade</button>
+		<h2>Hlasovací preukaz chcete prevziať</h2><br />
+		<button id="whom-home">poštou na adresu trvalého pobytu</button><br />
+		<button id="whom-other">poštou na inú adresu</button><br />
+		<button id="whom-someone">splnomocnenou osobou na miestnom úrade</button>
 	</aside>
 
 	<aside class="wrapper hidden section-how">
 		<br />
-		<h2>Ako formou chcete požiadať o zaslanie hlasovacieho preukazu ..</h2><br />
-		<button id="how-email">Elektronicky e-mailom</button><br />
-		<button id="how-personally">Osobne na miestnom úrade</button>
-		<button id="how-list">Listom na miestny úrad</button>
+		<h2>Ako formou chcete požiadať o zaslanie hlasovacieho preukazu</h2><br />
+		<button id="how-email">elektronicky e-mailom</button><br />
+		<button id="how-personally">osobne na miestnom úrade</button>
+		<button id="how-list">listom na miestny úrad</button>
 	</aside>
 
 	<aside class="wrapper hidden section-request">
 		<br />
 		<section>
-			<h2>Vaše osobné údaje totožné s občianskym preukazom</h2><br />
+			<h2>Vaše osobné údaje (ako na občianskom preukaze)</h2><br />
 			<label>
 				<div>Meno a priezvisko</div>
 				<div class="hidden validation name"><mark>Zadali ste neplatné meno, musí byť skutočné</mark></div>
@@ -151,7 +151,7 @@
 		</section>
 
 		<section class="with-address">
-			<br /><h2>Adresa Vášho trvalého pobytu</h2><br />
+			<br /><h2>Adresa trvalého pobytu</h2><br />
 			<label>
 				<div>Ulica a číslo</div>
 				<div class="hidden validation address"><mark>Zadali ste neplatnú adresu, vypíšte ulicu a číslo</mark></div>
@@ -208,33 +208,24 @@
 		</section>
 
         <br />
-		<button class="section-request-button">Vygenerovať žiadosť, ktorú pošlete Vašej obci</button>
-
-        <br />
-		<textarea id="generated" class="hidden"></textarea>
+		<button class="section-request-button">Vytvoriť žiadosť, ktorú pošlete Vašej obci</button>
 
         <section class="hidden last-steps">
-            <br /><br />
-            <h2><mark>Posledné kroky</mark></h2>
+            <h2>Posledné kroky</h2>
             <ol>
+                <li>Skopírujte nasledovnú žiadosť <img id="clipboard-request" src="./images/copy.png" alt="Skopírujte do clipboardu" />
+                    &nbsp;<small class="hidden">Skopírované!</small>
+                    <textarea id="generated" class="hidden"></textarea>
+                </li>
                 <li>
-					Skopírujte emailovú adresu Vašej obce: <strong id="last-steps-email">nemáme, musíte nájsť online</strong>
+					Pošlite na adresu Vašej obce: <strong id="last-steps-email">nemáme, musíte nájsť online</strong>
 					&nbsp;&nbsp;&nbsp;<img id="clipboard-email" src="./images/copy.png" alt="Skopírujte do clipboardu" />
 					&nbsp;<small class="hidden">Skopírované!</small>
 				</li>
-				<li>
-					Vytvorte email
-				</li>
-                <li>
-					Skopírujte Vašu žiadosť: <strong>Podľa §46 zákona č.180/2014...</strong>
-					&nbsp;&nbsp;&nbsp;<img id="clipboard-request" src="./images/copy.png" alt="Skopírujte do clipboardu" />
-					&nbsp;<small class="hidden">Skopírované!</small>
-				</li>
-                <li>
-					Odošlite email, ako ste zvyknutý z Vašej emailovej schránky
-				</li>
 				<li><strong>Ak do dvoch-troch dní neobdržíte emailové potvrdenie, volajte na úrad!</strong></li>
+                <li>Nezabudnite ísť voliť.</li>
 			</ol>
+
         </section>
 	</aside>
 
@@ -242,9 +233,9 @@
 		<h2>Ste občan, ktorý nemá trvalý pobyt na území SR?</h2>
 
 		<ol>
-            <li>Stiahnite si <a target="_blank" href="./assets/nema-trvalypobyt.docx">čestné prehlásenie</a> a vyplňte ho</li>
-			<li>Do volebnej miestnosti si zoberte cestovný pas</li>
-			<li>Komisia od vás nebude vyžadovať hlasovací preukaz</li>
+            <li>Stiahnite si <a target="_blank" href="./assets/nema-trvalypobyt.docx">čestné prehlásenie</a> a vyplňte ho.</li>
+			<li>Do volebnej miestnosti si zoberte cestovný pas.</li>
+			<li>Komisia od vás nebude vyžadovať hlasovací preukaz.</li>
 		</ol>
 	</aside>
 
