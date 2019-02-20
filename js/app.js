@@ -105,11 +105,11 @@ PSČ: $5
         if (getQuery("whom") === "home") {
             text += `
             
-Lístok prosím zaslať na trvalý pobyt.`
+Preukaz prosím zaslať na trvalý pobyt.`
         } else if (getQuery("whom") === "other") {
             text += `
             
-Lístok prosím zaslať na korešpondenčnú adresu: 
+Preukaz prosím zaslať na korešpondenčnú adresu: 
 $6`
         } else if (getQuery("whom") === "someone") {
             text += `
