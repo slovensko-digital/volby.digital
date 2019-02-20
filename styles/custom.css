@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 600px;
+    max-width: 610px;
     margin: 0 auto;
 }
 .wrapper-wide {
@@ -50,9 +50,6 @@ nav ul {
 }
 .navigation li div {
     display: inline-block;
-    border: 30px;
-    background: #83b443;
-    color: white;
     padding: 5px 14px;
     border-radius: 30px;
     margin-bottom: 5px;
@@ -142,17 +139,6 @@ ol {
 .section-info .left {
     width: 47%;
     margin: 1.5%;
-}
-
-@media (min-width: 590px)
-{
-    .section-info .election-dates-column {
-        width: 40%;
-    }
-
-    .section-info .reasons-column {
-        width: 50%;
-    }
 }
 
 .section-info img {
