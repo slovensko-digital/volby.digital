@@ -11,5 +11,4 @@
     ga('require', 'linkid', 'linkid.js');
     ga('send', 'pageview');
 
-
 })();
