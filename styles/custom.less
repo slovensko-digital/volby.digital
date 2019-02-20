@@ -46,17 +46,6 @@ nav {
 
 .navigation {
 
-    &:before {
-        content: "";
-        width: 100%;
-        height: 1px;
-        display: block;
-        background: #b9b9b9;
-        position: relative;
-        top: 20px;
-        z-index: -1;
-    }
-
     li {
         display: inline-block;
         padding: 0 4px;
@@ -103,12 +92,25 @@ nav {
 }
 
 @media (max-width: 700px) {
+    .navigation:before {
+        display: none;
+    }
+
+    ol {
+        padding: 15px 0;
+    }
+
     nav {
         padding: 10px;
         text-align: center;
     }
     .navigation li {
         font-size: 14px;
+        width: 19%;
+        margin: 0;
+    }
+    .navigation li span {
+        display: none;
     }
 }
 
