@@ -206,7 +206,7 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
 
     function attachAllHandlers() {
         $(".section-info button").first().on("click", function(ev){
-            setQuery({ step: "1" })
+            setQuery({ step: "2" })
         });
 
         $(".section-request [name=name]").on("keyup", function(ev){
