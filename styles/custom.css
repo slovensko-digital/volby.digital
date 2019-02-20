@@ -141,7 +141,7 @@ ol {
     font-weight: 400;
 }
 .section-info .small {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
 }
 .section-info small {
@@ -154,7 +154,7 @@ ol {
 }
 .section-info .supported-by {
     max-width: 668px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
 }
 @media (max-width: 700px) {
