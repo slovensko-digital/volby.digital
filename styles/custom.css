@@ -152,7 +152,7 @@ ol {
 .section-request label {
     display: block;
     margin-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .section-info button {
     padding: 15px 47px;
@@ -233,10 +233,10 @@ ol {
 .select2-container--default .select2-selection--single {
     border-radius: 10px;
     height: 59px;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #eaeaea;
     position: relative;
     top: -3px;
-    background: white;
+    background: #f8f8f8;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #000000;
@@ -293,4 +293,45 @@ ol {
 
 .footer-link:hover {
     opacity: 0.7;
+}
+
+.validation {
+    margin-top: -14px;
+    margin-bottom: 8px;
+}
+
+mark {
+    color: #c60023;
+    background-color: white;
+    font-size: 15px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.25;
+}
+
+.hint {
+    font-size: 15px;
+    color: #aeaeae;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+label.error input {
+    border-color: #ed0029;
+    background-color: #ffe0e3;
+}
+
+label.error .select2-container--default .select2-selection--single {
+    border-color: #ed0029;
+    background-color: #ffe0e3;
+}
+
+.form h2 {
+    font-family: inherit;
+    font-size: 32px;
+    line-height: 1.25;
 }

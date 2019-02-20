@@ -38,7 +38,7 @@
             // matcher: matchCustom,
             maximumInputLength: 2,
             data: results,
-            placeholder: "napr. Banská Bystrica",
+            placeholder: "",
             width: 'resolve'
         });
     }
@@ -57,6 +57,7 @@
         };
         const resultWithError = function(selector) {
             $(selector).show();
+            $(selector).closest('label').addClass('error');
             valid = false
         };
 

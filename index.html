@@ -128,82 +128,94 @@
 		</ol>
 	</aside>
 
-	<aside class="wrapper hidden section-request">
-		<section>
+	<aside class="wrapper hiddesn section-request">
+		<section class="form">
 			<h2>Vaše osobné údaje (ako na občianskom preukaze)</h2>
 			<p><small>Vaše osobné údaje nijako nespracovávame, ostávajú len vo Vašom prehliadači.</small></p>
 			<label>
-				<div>Meno, priezvisko, titul</div>
+				<div class="label">Meno, priezvisko, titul</div>
+				<div class="hint">napr. JUDr. Ján Mrvička</div>
 				<div class="hidden validation name"><mark>Zadali ste neplatné meno, musí byť skutočné</mark></div>
-				<input name="name" type="text" placeholder="napr. JUDr. Ján Baláž" />
+				<input name="name" type="text" />
 			</label>
 
 			<label>
-				<div>Rodné číslo</div>
+				<div class="label">Rodné číslo</div>
+				<div class="hint">napr. 123456/1234</div>
 				<div class="hidden validation ssn"><mark>Zadali ste neplatné rodné číslo, skúste tvar XXYYZZ/XXXX</mark></div>
-				<input name="ssn" type="text" placeholder="napr. 123456/1234" />
+				<input name="ssn" type="text" />
 			</label>
 
 			<label>
-				<div>Štátna príslušnosť</div>
-				<input type="text" placeholder="napr. 123456/1234" value="slovenská" disabled="disabled" />
+				<div class="label">Štátna príslušnosť</div>
+				slovenská
 			</label>
 		</section>
 
-		<section class="with-address">
+		<section class="with-address form">
 			<h2>Vaša adresa trvalého pobytu</h2><br />
 			<label>
-				<div>Ulica a číslo</div>
+				<div class="label">Ulica a číslo</div>
+				<div class="hint">napr. Kaštieľska 2</div>
 				<div class="hidden validation address"><mark>Zadali ste neplatnú adresu, vypíšte ulicu a číslo</mark></div>
-				<input name="address" type="text" placeholder="napr. Kaštieľska 2" />
+				<input name="address" type="text" />
 			</label>
 
 			<label>
-				<div>Obec</div>
-				<div class="hidden validation city"><mark>Nevybrali ste obec zo zoznamu</mark></div>
-				<input name="city" type="text" placeholder="napr. Banská Bystrica" />
-			</label>
-
-			<label>
-				<div>PSČ</div>
+				<div class="label">PSČ</div>
+				<div class="hint">napr. 82102</div>
+				<div></div>
 				<div class="hidden validation zip"><mark>Zadali ste príliš krátke PSČ</mark></div>
-				<input name="zip" type="text" placeholder="napr. 82102"  />
+				<input name="zip" type="text" />
+			</label>
+
+			<label>
+				<div class="label">Obec</div>
+				<div class="hint">Vyberte zo zoznamu</div>
+				<div class="hidden validation city"><mark>Nevybrali ste obec zo zoznamu</mark></div>
+				<input name="city" type="text" placeholder="---" />
 			</label><br />
 		</section>
 
-		<section class="hidden corresponding-address">
+		<section class="hidden corresponding-address form">
 			<h2>Poštová adresa, na ktorú príde hlasovací preukaz</h2>
 			<label>
-				<div>Ulica a číslo</div>
-				<input name="corresponding-address" type="text" placeholder="napr. Jiřího" />
+				<div class="label">Ulica a číslo</div>
+				<div class="hint">napr. Jiřího</div>
+				<input name="corresponding-address" type="text" />
 			</label>
 
 			<label>
-				<div>Obec</div>
-				<input name="corresponding-city" type="text" placeholder="napr. Praha" />
+				<div class="label">Obec</div>
+				<div class="hint">napr. Praha</div>
+				<input name="corresponding-city" type="text" />
 			</label>
 
 			<label>
-				<div>PSČ</div>
-				<input name="corresponding-zip" type="text" placeholder="napr. 11011"  />
+				<div class="label">PSČ</div>
+				<div class="hint">napr. 11011</div>
+				<input name="corresponding-zip" type="text" />
 			</label>
 
 			<label>
-				<div>Štát</div>
-				<input name="corresponding-country" type="text" placeholder="napr. Gruzínsko"  />
+				<div class="label">Štát</div>
+				<div class="hint">napr. Česko</div>
+				<input name="corresponding-country" type="text" />
 			</label><br />
 		</section>
 
-		<section class="hidden responsible-person">
+		<section class="hidden responsible-person form">
 			<h2>Údaje splnomocnenej osoby, ktorá prevezme preukaz osobne</h2>
 			<label>
-				<div>Meno a prezvisko</div>
-				<input name="responsible-name" type="text" placeholder="napr. Milan Rúfus" />
+				<div class="label">Meno a prezvisko splnomocnenej osoby</div>
+				<div class="hint">napr. Katarína Múdra</div>
+				<input name="responsible-name" type="text" />
 			</label>
 
 			<label>
-				<div>Číslo občianskeho preukazu</div>
-				<input name="responsible-id" type="text" placeholder="napr. XX123456" />
+				<div class="label">Číslo občianskeho preukazu splnomocnenej osoby</div>
+				<div class="hint">napr. XX123456</div>
+				<input name="responsible-id" type="text" />
 			</label>
 		</section>
 
