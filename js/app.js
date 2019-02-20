@@ -39,12 +39,15 @@
             maximumInputLength: 2,
             data: results,
             placeholder: "napr. Banská Bystrica",
+            width: 'resolve'
         });
     }
 
     $(document).on('focus', '.select2-selection', function (e) {
-
-        $(this).parent().parent().prev().select2("open");
+        if (e.originalEvent)
+        {
+            $(this).parent().parent().prev().select2("open");
+        }
     });
 
     function formValidation() {
@@ -61,7 +64,13 @@
         if (getInputValue("address").length < 5) resultWithError(".validation.address")
         if (getInputValue("name").length < 6) resultWithError(".validation.name")
         if (getInputValue("zip").length < 4) resultWithError(".validation.zip")
-        if (parseInt(getInputValue("city") * 1) === 0) resultWithError(".validation.city")
+
+        if (!(parseInt(getInputValue("city")) > 0)) // neda sa vycentrovat
+        {
+            $(".section-request [name=city]").select2('destroy');
+            handleCities();
+            resultWithError(".validation.city")
+        }
         if (getInputValue("ssn").length < 9) resultWithError(".validation.ssn")
 
         return valid
@@ -174,8 +183,6 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
             displaySlide(2);
         } else if (step === "3") {
             displaySlide(3);
-        } else if (step === "4") {
-            displaySlide(4);
 
             if (getQuery("whom") === "someone") {
                 $(".responsible-person").show()
@@ -188,23 +195,18 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
                 // chcem si ho prevziat osobne
             }
 
-            if (getQuery("how") === "email") {
-                $(".with-address").show()
-                // chcem ho poslat emailom
-            } else if (getQuery("how") === "list") {
-                // chcem ho poslat postou
-            }
+            $(".with-address").show()
 
+        } else if (step === "4") {
+            displaySlide(4) // nema trvaly pobyt na uzemi SR
         } else if (step === "5") {
-            displaySlide(5) // nema trvaly pobyt na uzemi SR
-        } else if (step === "6") {
-            displaySlide(6) // zoberie si to osobne
+            displaySlide(5) // zoberie si to osobne
         }
     }
 
     function attachAllHandlers() {
         $(".section-info button").first().on("click", function(ev){
-            setQuery({ step: "1" })
+            setQuery({ step: "2" })
         });
 
         $(".section-request [name=name]").on("keyup", function(ev){
@@ -226,7 +228,7 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
                 $("html, body").animate({ scrollTop: 0 }, "slow");
             } else {
                 fillTextareaRequest();
-                $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+                $("html, body").animate({ scrollTop: 0 }, "slow");
                 $(".last-steps").show();
 
                 const result = handleCities($(".section-request [name=city]").val());
@@ -243,7 +245,12 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
         });
 
         $(".email-button").on("click", function() {
-            ga('send', 'action-send')
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'Ziadost',
+                eventAction: 'send',
+                eventLabel: 'action-send'
+            });
         });
 
         $("#clipboard-request").on("click", function(){
@@ -263,19 +270,13 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
 
         // trvaly pobyt mam
         $("#residence-sk").on("click", function() { setQuery({ residence: "sk", step: "2" }) }); // na slovensku
-        $("#residence-out").on("click", function() { setQuery({ residence: "out", step: "5" }) }); // v zahranici
+        $("#residence-out").on("click", function() { setQuery({ residence: "out", step: "4" }) }); // v zahranici
 
         // prevezmem
         $("#whom-home").on("click", function() { setQuery({ whom: "home", step: "3" }) }); // dorucit domov
         $("#whom-other").on("click", function() { setQuery({ whom: "other", step: "3" }) }); // dorucit inde
-        $("#whom-someone").on("click", function() { setQuery({ whom: "someone", step: "4" }) }); // splnomocnenec
-        $("#whom-personally").on("click", function() { setQuery({ whom: "personally", step: "6" }) }); // osobne
-
-        // chcem dorucit
-        $("#how-email").on("click", function() { setQuery({ how: "email", step: "4" }) }); // emailom
-        $("#how-list").on("click", function() { setQuery({ how: "list", step: "4" }) }); // listom
-
-        // chcem dorucit
+        $("#whom-someone").on("click", function() { setQuery({ whom: "someone", step: "3" }) }); // splnomocnenec
+        $("#whom-personally").on("click", function() { setQuery({ whom: "personally", step: "5" }) }); // osobne
     }
 
     handleUriParams();

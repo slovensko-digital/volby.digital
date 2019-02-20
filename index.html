@@ -46,10 +46,9 @@
 	<nav>
 		<ol class="navigation wrapper-wide">
 			<li id="info"><div>1</div><span>Úvod</span></li>
-			<li id="residence"><div>2</div><span>Pobyt</span></li>
-			<li id="whom"><div>3</div><span>Prevzatie</span></li>
-			<li id="about"><div>4</div><span>Doručenie</span></li>
-			<li id="request"><div>5</div><span>Žiadosť</span></li>
+			<li id="residence" style="display: none;"><div>2</div><span>Pobyt</span></li>
+			<li id="whom"><div>2</div><span>Prevzatie</span></li>
+            <li id="request"><div>3</div><span>Žiadosť</span></li>
 		</ol>
 	</nav>
 
@@ -100,6 +99,7 @@
 			Podporujeme aj online petíciu za voľby zo zahraničia:<br />
 			<a href="https://www.srdcomdoma.sk/" target="_blank"><img style="height: 87px;" src="./images/srdcomdoma-logo-326x148-2.png" alt="srdcom doma logo" /></a>
 			<br /><br />
+			V prípade problémov nás kontaktuje emailom na <a href="mailto:volby@slovensko.digital" class="footer-link">volby@slovensko.digital</a>.
 		</div>
 	</aside>
 
@@ -110,17 +110,22 @@
 	</aside>
 
 	<aside class="wrapper hidden section-whom">
-		<h2>Hlasovací preukaz chcete prevziať</h2><br />
+		<h2>Máte trvalý pobyt na území SR?</h2>
+
+        <p>Môžete požiadať o hlasovací preukaz. Zvoľte spôsob, akým si ho chcete prevziať</p>
+
 		<button id="whom-home">poštou na adresu trvalého pobytu</button><br />
 		<button id="whom-other">poštou na inú adresu</button><br />
-		<button id="whom-personally">osobne na miestnom úrade</button><br />
 		<button id="whom-someone">splnomocnenou osobou na miestnom úrade</button><br />
-	</aside>
+        <button id="whom-personally">osobne na miestnom úrade</button><br />
 
-	<aside class="wrapper hidden section-how">
-		<h2>Ako formou chcete požiadať o zaslanie hlasovacieho preukazu</h2><br />
-		<button id="how-email">elektronicky e-mailom</button><br />
-		<button id="how-list">listom na miestny úrad</button>
+		<h2>Nemáte trvalý pobyt na území SR?</h2>
+
+		<ol>
+			<li>Stiahnite si čestné prehlásenie ako <a target="_blank" href="./assets/nema-trvalypobyt.docx">DOCX</a> alebo <a target="_blank" href="./assets/nema-trvalypobyt.pdf">PDF</a> a vyplňte ho.</li>
+			<li>Do volebnej miestnosti si zoberte cestovný pas.</li>
+			<li>Komisia od vás nebude vyžadovať hlasovací preukaz.</li>
+		</ol>
 	</aside>
 
 	<aside class="wrapper hidden section-request">
@@ -146,7 +151,7 @@
 		</section>
 
 		<section class="with-address">
-			<h2>Adresa trvalého pobytu</h2><br />
+			<h2>Vaša adresa trvalého pobytu</h2><br />
 			<label>
 				<div>Ulica a číslo</div>
 				<div class="hidden validation address"><mark>Zadali ste neplatnú adresu, vypíšte ulicu a číslo</mark></div>
@@ -167,9 +172,9 @@
 		</section>
 
 		<section class="hidden corresponding-address">
-			<h2>Korešpodenčná adresa, kam chcete zaslať hlasovací preukaz</h2>
+			<h2>Poštová adresa, na ktorú príde hlasovací preukaz</h2>
 			<label>
-				<div>Korešpodenčná ulica a číslo</div>
+				<div>Ulica a číslo</div>
 				<input name="corresponding-address" type="text" placeholder="napr. Jiřího" />
 			</label>
 
@@ -205,8 +210,8 @@
 		<button class="section-request-button">Vytvoriť žiadosť, ktorú pošlete Vašej obci</button>
 
         <section class="hidden last-steps">
-            <h2>Odoslanie žiadosti</h2>
-			<p><strong>Upozornenie:</strong> Keďže zoznam všetkých emailových adries obcí pre tento účel je veľmi problematické získať, nevieme úplne garantovať ich správnosť. Prosíme Vás, uistite sa, že dostane potvrdenie o prijatí žiadosti od obce v priebehu najbližších dní. V&nbsp;opačnom prípade kontaktujte obec telefonicky alebo osobne.</p>
+            <h2>Takmer hotovo! Zostáva odoslať žiadosť</h2>
+			<p><strong>Upozornenie:</strong> Keďže zoznam všetkých emailových adries obcí pre tento účel je veľmi problematické získať, nevieme úplne garantovať ich správnosť. Prosíme Vás, uistite sa, že dostanete potvrdenie o prijatí žiadosti od obce v priebehu najbližších dní. V&nbsp;opačnom prípade kontaktujte obec telefonicky alebo osobne.</p>
 			<a href="mailto:" target="_blank" class="email-button btn">Otvoriť pripravenú žiadosť v emailovom klientovi</a>
 			<br /><br /><strong>alebo manuálne</strong><br />
 
@@ -223,15 +228,8 @@
         </section>
 	</aside>
 
-	<aside class="wrapper hidden section-havenoresidence">
-		<h2>Ste občan, ktorý nemá trvalý pobyt na území SR?</h2>
-
-		<ol>
-            <li>Stiahnite si <a target="_blank" href="./assets/nema-trvalypobyt.docx">čestné prehlásenie</a> a vyplňte ho.</li>
-			<li>Do volebnej miestnosti si zoberte cestovný pas.</li>
-			<li>Komisia od vás nebude vyžadovať hlasovací preukaz.</li>
-		</ol>
-	</aside>
+    <aside class="wrapper hidden section-havenoresidence">
+    </aside>
 
 	<aside class="wrapper hidden section-goesinperson">
 		<h2>Občan, ktorý si chce prevziať hlasovací preukaz osobne</h2>

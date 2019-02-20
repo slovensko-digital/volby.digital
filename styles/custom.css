@@ -21,9 +21,9 @@
 body:before {
     content: "";
     width: 100%;
-    height: 15px;
+    height: 10px;
     display: block;
-    background: #2a61d5;
+    background: #005ed6;
     margin-bottom: 20px;
 }
 nav {
@@ -131,7 +131,7 @@ h2 {
     }
 
     .navigation li.selected div:after {
-        content: '/5';
+        content: '/3';
     }
 
     .navigation li.selected {
@@ -227,6 +227,9 @@ ol {
         width: 100% !important;
     }
 }
+
+.select2-container{ width: 100% !important; }
+
 .select2-container--default .select2-selection--single {
     border-radius: 10px;
     height: 59px;
@@ -281,4 +284,13 @@ ol {
 }
 :-moz-placeholder { /* Firefox 18- */
     color: #d6d6d6;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
 }
