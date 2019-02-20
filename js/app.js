@@ -272,13 +272,13 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
 
         // trvaly pobyt mam
         $("#residence-sk").on("click", function() { setQuery({ residence: "sk", step: "2" }) }); // na slovensku
-        $("#residence-out").on("click", function() { setQuery({ residence: "out", step: "5" }) }); // v zahranici
+        $("#residence-out").on("click", function() { setQuery({ residence: "out", step: "4" }) }); // v zahranici
 
         // prevezmem
         $("#whom-home").on("click", function() { setQuery({ whom: "home", step: "3" }) }); // dorucit domov
         $("#whom-other").on("click", function() { setQuery({ whom: "other", step: "3" }) }); // dorucit inde
-        $("#whom-someone").on("click", function() { setQuery({ whom: "someone", step: "4" }) }); // splnomocnenec
-        $("#whom-personally").on("click", function() { setQuery({ whom: "personally", step: "6" }) }); // osobne
+        $("#whom-someone").on("click", function() { setQuery({ whom: "someone", step: "3" }) }); // splnomocnenec
+        $("#whom-personally").on("click", function() { setQuery({ whom: "personally", step: "5" }) }); // osobne
     }
 
     handleUriParams();
