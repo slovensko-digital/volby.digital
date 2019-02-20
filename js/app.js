@@ -129,8 +129,8 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
 
      function handleUriParams() {
         function displaySlide(n) {
-            if (n === 0) {
-                $(".navigation").hide()
+            if (n > 0) {
+                $("nav").show()
             }
 
             $(".navigation li").removeClass("selected"); // handle menu items

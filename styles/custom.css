@@ -31,6 +31,7 @@ nav {
     padding: 10px 0;
     border-bottom: 1px solid #b9b9b9;
     text-align: center;
+    display: none;
 }
 nav ul {
     padding: 0;
@@ -45,6 +46,7 @@ nav ul {
     margin: 0 29px;
     width: 92px;
     font-size: 14px;
+    color: #638b34;
 }
 .navigation li div {
     display: inline-block;
@@ -54,11 +56,21 @@ nav ul {
     padding: 5px 14px;
     border-radius: 30px;
     margin-bottom: 5px;
+
+    background: white;
+    color: #638b34;
+    border: 1px solid #83b443;
 }
 .navigation .selected {
     background: white;
     color: black;
 }
+
+.navigation .selected div {
+    background: #83b443;
+    color: white;
+}
+
 .navigation li:hover {
     color: #4f94ff;
 }
@@ -70,7 +82,7 @@ nav ul {
 .navigation .after div,
 .navigation .after:hover div {
     background: white;
-    color: black;
+    color: #8c8c8c;
     border: 1px solid #b9b9b9;
 }
 @media (max-width: 700px) {
@@ -131,6 +143,18 @@ ol {
     width: 47%;
     margin: 1.5%;
 }
+
+@media (min-width: 590px)
+{
+    .section-info .election-dates-column {
+        width: 40%;
+    }
+
+    .section-info .reasons-column {
+        width: 50%;
+    }
+}
+
 .section-info img {
     margin: 11px 7px 4px 0;
     vertical-align: middle;
@@ -217,4 +241,8 @@ ol {
 #clipboard-email:hover,
 #clipboard-request:hover {
     opacity: 0.9;
+}
+
+.second-round {
+    margin-top: 15px;
 }
