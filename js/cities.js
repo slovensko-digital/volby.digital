@@ -1637,7 +1637,7 @@
                 'matejovce-nad-hornadom':['Obecný úrad','','','97','053 21','Markušovce','matejovcenh@levonetmail.sk','053','449 81 87','0903 762 730','Matejovce nad Hornádom','1',''],
                 'mlynky':['Obecný úrad','','','324','053 76','Mlynky','obecmlynky@fz.sk','053','449 32 09','0903 634 722','Mlynky','0',''],
                 'odorin':['Obecný úrad','','','266','053 22','Odorín','obecodorin@stonline.sk','053','446 19 54,442 26 81','0907 541 064','Odorín','0',''],
-                'olcnava':['Obecný úrad','','Jarná','2','053 61','Spišské Vlachy','olcnava@stonline.sk','053','449 56 28','0917 941 678','Olcnava','0',''],
+                'olcnava':['Obecný úrad','','Jarná','2','053 61','Spišské Vlachy','ouolcnava@gmail.com','053','449 56 28','0917 941 678','Olcnava','0',''],
                 'olsavka':['Obecný úrad','','','39','053 61','Spišské Vlachy','olsavka@zoznam.sk','053','449 51 87,449 52 70','0910 184 096','Oľšavka','0','',1],
                 'porac':['Obecný úrad','','Poráč ','61 ','053 23 ','Rudňany','obecporac@demax.sk','053','429 71 85,86,87 ','0902 905 290','Poráč','0',''],
                 'rudnany':['Obecný úrad','','','234','053 23','Rudňany','obec@rudnany.sk','053','449 91 02,93 13','908 981 602, 603','Rudňany','1',''],
