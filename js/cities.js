@@ -729,7 +729,7 @@
                 'benus':['Obecný úrad','','Beňuš','355','976 64','Beňuš','obec@benus.sk','048','619 81 23.721','0948 460 360','Beňuš','1',''],
                 'bravacovo':['Obecný úrad','','Braväcovo','196','976 64','Beňuš','obecbravacovo@slovanet.sk','048','619 81 32,619 88 18','','Braväcovo','1',''],
                 'bystra':['Obecný úrad','','Bystrá','62','977 01','Brezno','obecbystra@stonline.sk','048','619 53 80,619 57 94','0911 944 945','Bystrá','0','',1],
-                'cierny-balog':['Obecný úrad','','Závodie','2/2','976 52','Čierny Balog','starosta@ciernybalog.sk','048','630 43 10, 630 43 14','0905 592 994','Čierny Balog','0',''],
+                'cierny-balog':['Obecný úrad','','Závodie','2/2','976 52','Čierny Balog','volby@ciernybalog.sk','048','630 43 10, 630 43 14','0905 592 994','Čierny Balog','0',''],
                 'dolna-lehota':['Obecný úrad','','Dolná Lehota','162','976 98','Lopej','dolnalehota@zoznam.sk','048','617 92 37','0911 590 851 ','Dolná Lehota','1',''],
                 'drabsko':['Obecný úrad','','Drábsko','10','976 53','Lom nad Rimavicou','obecdrabsko@gmail.com','048','618 00 83','0903 408 349','Drábsko','1',''],
                 'helpa':['Obecný úrad','','Farská','588/2','976 68','Heľpa','helpa@helpa.sk','048','618 61 50,670 09 41,618 62 37','0905 651 122,0905 310 490,0911 318 459','Heľpa','0',''],
