@@ -2901,7 +2901,7 @@
                 'habovka':['Obecný úrad','','Habovka','266','027 32','Habovka','matrika@habovka.sk','043','539 51 42,532 11 80','0903 540 881','Habovka','1',''],
                 'hladovka':['Obecný úrad','','Hladovka','45','027 13','Suchá Hora','ocuhladovka@orava.sk','043','539 77 02','0905 472 430','Hladovka','0',''],
                 'liesek':['Obecný úrad','','Michalská časť','442','027 12','Liesek','obec@liesek.eu.sk','043','538 42 20, 538 42 27','','Liesek','0',''],
-                'nizna':['Obecný úrad','','Nová Doba','506','027 43','Nižná','obec@nizna.sk','043','538 13 60,61, 530 97 86','0905 899 609','Nižná','0','',1],
+                'nizna':['Obecný úrad','','Nová Doba','506','027 43','Nižná','sekretariat@nizna.sk','043','538 13 60,61, 530 97 86','0905 899 609','Nižná','0','',1],
                 'oravsky-biely-potok':['Obecný úrad','','Oravský Biely Potok','132','027 42','Podbiel','oravskybielypotok@bsk.sk','043','539 54 11,532 18 00','0903 550 488','Oravský Biely Potok','1',''],
                 'podbiel':['Obecný úrad','','Podbiel','210','027 42','Podbiel','starosta@podbiel.sk','043','538 10 31, 532 16 50','0905 577 341','Podbiel','1',''],
                 'stefanov-nad-oravou':['Obecný úrad','','Plátenícka','61','027 44','Tvrdošín','obecstefanov@oravanet.sk','043','532 24 26','0905 413 055,0907 137 934','Štefanov nad Oravou','1',''],
