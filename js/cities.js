@@ -2124,7 +2124,7 @@
                 'nitrianske-pravno':['Obecný úrad','','Námestie  SNP','1/1','972 13','Nitrianske Pravno','ocu@nitrianskepravno.sk','046','544 75 10,544 62 33','','Nitrianske Pravno','0',''],
                 'nitrianske-rudno':['Obecný úrad','','Hlavná','1','972 26','Nitrianske Rudno','ocu.nitrianskerudno@stonline.sk','046','545 50 70,76,77','0905 592 446','Nitrianske Rudno','0',''],
                 'nitrianske-sucany':['Obecný úrad','','Nitrianske Sučany','242','972 21','Nitrianske Sučany','obec@nitrianskesucany.sk','046','549 01 12,549 01 89','0917 814 372','Nitrianske Sučany','1',''],
-                'nitrica':['Obecný úrad','','Nitrica','489','972 22','Nitrica','obec@nitrica.sk','046','549 71 08,11,30','0905 319 172','Nitrica','1',''],
+                'nitrica':['Obecný úrad','','Nitrica','489','972 22','Nitrica','info@obecnitrica.sk','046','549 71 08,11,30','0905 319 172','Nitrica','1',''],
                 'novaky':['Mestský úrad','','Nám. SNP','349/10','972 71','Nováky','primator@novaky.sk','046','512 15 11,12,13,14,34','','Nováky','1',''],
                 'opatovce-nad-nitrou':['Obecný úrad','','Opatovce nad Nitrou','393','972 02','Opatovce nad Nitrou','podatelna@opatovcenadnitrou.sk','046','518 60 60,61,63,65','0903 844 604','Opatovce nad Nitrou','0',''],
                 'oslany':['Obecný úrad','','Nám. Slobody','2/3','972 47','Oslany','podatelna@oslany.sk','046','549 11 01,19','0911 928 616,0905 840 348','Oslany','0',''],
