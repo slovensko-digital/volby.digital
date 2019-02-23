@@ -1532,7 +1532,7 @@
                 'hrhov':['Obecný úrad','','','363','049 44','Hrhov ','obechrhov@kidrv.sk','058','788 36 70,796 15 86','0905 367 720','Hrhov','0',''],
                 'hrusov':['Obecný úrad','','','5','049 43','Jablonov nad Turňou','obechrusov@stonline.sk','058','796 15 22,788 17 39','','Hrušov','1','',1],
                 'jablonov-nad-turnou':['Obecný úrad','','','73','049 43','Jablonov nad Turňou','starostajnt@stonline.sk','058','796 11 08','0911974647','Jablonov nad Turňou','0',''],
-                'jovice':['Obecný úrad','','Hlavná','50','049 45','Krásnohorská Dlhá Lúka','obecjovice@kidrv.sk','058','732 65 29,732 79 95','0904 967 160','Jovice','0',''],
+                'jovice':['Obecný úrad','','Hlavná','50','049 45','Krásnohorská Dlhá Lúka','obecjovice@veganet.sk','058','732 65 29,732 79 95','0904 967 160','Jovice','0',''],
                 'kecovo':['Obecný úrad','','','78','049 55','Dlhá Ves','kecovo.obec@gmail.com','058','788 11 73-5','0903 260 163','Kečovo','1',''],
                 'kobeliarovo':['Obecný úrad','','','78','049 23','Nižná Slaná','obec@kobeliarovo.sk','058','795 12 43','','Kobeliarovo','0',''],
                 'kocelovce':['Obecný úrad','','','2','049 35','Ochtiná','obeckocelovce@azet.sk','058','793 19 15','0902 966 280','Koceľovce','0',''],
