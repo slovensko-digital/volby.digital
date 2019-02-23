@@ -332,8 +332,7 @@ function replaceDiacritics(str) {
         }
 
         $(".section-request [name=city]").select2({
-            // matcher: matchCustom,
-            maximumInputLength: 2,
+            //minimumInputLength: 3,
             data: results,
             placeholder: "",
             width: 'resolve',
@@ -343,9 +342,31 @@ function replaceDiacritics(str) {
                 }
 
                 var term = replaceDiacritics(params.term).toLowerCase();
+                var index = data.search_text.indexOf(term);
 
-                if (data.search_text.indexOf(term) > -1) {
+                if (index === 0) {
                     return data;
+                }
+                else
+                {
+                    if (index > -1) {
+
+                        if (term.length < 4)
+                        {
+                            for (var f = 0; f < data.search_text_terms.length; f++)
+                            {
+                                if (data.search_text_terms[f].indexOf(term) === 0)
+                                {
+                                    return data;
+                                }
+                            }
+                            return null;
+                        }
+                        else
+                        {
+                            return data;
+                        }
+                    }
                 }
 
                 return null;
