@@ -302,6 +302,12 @@ function replaceDiacritics(str) {
             })
         });
 
+        results = results.sort(function (a, b) {
+            var x = a.text;
+            var y = b.text;
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+
         if (city) {
             var result;
 
