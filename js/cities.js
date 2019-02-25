@@ -2093,7 +2093,7 @@
                 'ziharec':['Obecný úrad','','Žihárec','599','925 83','Žihárec','obecziharec@mail.t-com.sk','031','779 82 01','0907 939 214','Žihárec','0','']}},
         'Trenčiansky kraj':{'Okres Prievidza':{'1prievidza':['Mestský úrad','','Nám. slobody','14','971 01','Prievidza','jana.apolenova@prievidza.sk;darina.gatialova@prievidza.sk','046','542 23 80, 517 91 10,11,542 69 41','','Prievidza','0',''],
                 'bojnice':['Mestský úrad','','Sládkovičová','1/176','972 01','Bojnice','sekretariat@bojnice.sk','046','512 16 01,03,04,05','','Bojnice','0',''],
-                'bystricany':['Obecný úrad','','Mirka Nešpora','1/17','972 45','Bystričany','obec.bystricany@stonline.sk','046','549 31 20,549 30 09','0905 623 597','Bystričany','0',''],
+                'bystricany':['Obecný úrad','','Mirka Nešpora','1/17','972 45','Bystričany','sona.dudasova@bystricany.sk','046','549 31 20,549 30 09','0905 623 597','Bystričany','0',''],
                 'cavoj':['Obecný úrad Čavoj','','Čavoj','86','972 29','Čavoj','obec.cavoj@centrum.sk','046','545 80 02','+421 911 574 874','Čavoj','0',''],
                 'cerenany':['Obecný úrad','','Pálenická','491/4','972 46','Čereňany','cerenany@cerenany.sk','046','549 51 19,549 51 71,549 20 46,47','0903 804 865','Čereňany','1',''],
                 'chrenovec-brusno':['Obecný úrad','','Chrenovec - Brusno','1','972 32','Chrenovec - Brusno','podatelna@chrenovec.sk','046','547 11 45,547 14 77 ','0904 103 917','Chrenovec - Brusno','0',''],
