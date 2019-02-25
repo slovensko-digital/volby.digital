@@ -2186,7 +2186,7 @@
                 'vysocany':['Obecný úrad','','Vysočany','35','956 35','Nedašovce pri Topoľčanoch','obecvysocany@gmail.com','038','768 72 15 ','','Vysočany','1',''],
                 'zitna-radisa':['Obecný úrad','','Žitná - Radiša','105','956 42','Žitná Radiša','podatelna@zitna-radisa.sk','038','769 44 21','0905 122 343,0918 430 840 ','Žitná - Radiša','0',''],
                 'zlatniky':['Obecný úrad','','Zlatníky','42','956 37','Zlatníky','obec@zlatniky.sk','038','769 51 33,769 52 44','0908 798 456,0904 858 444','Zlatníky','0','']},
-            'Okres Ilava':{'1dubnica-nad-vahom':['Mestský úrad','','Bratislavská ','434/9','018 41','Dubnica nad Váhom','milan.dohnansky@dubnica.eu','042','445 57 38, 445 57 00','0905 678 410,0918 117 060','Dubnica nad Váhom','1',''],
+            'Okres Ilava':{'1dubnica-nad-vahom':['Mestský úrad','','Bratislavská ','434/9','018 41','Dubnica nad Váhom','bozena.janurova@dubnica.eu','042','445 57 38, 445 57 00','0905 678 410,0918 117 060','Dubnica nad Váhom','1',''],
                 'bohunice':['Obecný úrad','','Bohunice ','103','018 52','Pruské','info@obecbohunice.sk','042','449 22 74','','Bohunice','0','',1],
                 'bolesov':['Obecný úrad','','Bolešov','78','018 53','Bolešov','starosta@bolesov.eu','042','449 31 34','0907 630 317','Bolešov','1',''],
                 'borcice':['Obecný úrad','','Borčice','73','018 53 ','Bolešov','obec-borcice@stonline.sk','042','449 32 83, 444 02 63 ','0903 493 283','Borčice','0',''],
