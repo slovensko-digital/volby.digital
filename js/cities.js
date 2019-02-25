@@ -2680,7 +2680,7 @@
                 'marsova-rasov':['Obecný úrad','','Maršova - Rašov','2','013 51','Predmier','obec.marsova.rasov@stonline.sk','041','557 11 71,557 10 00','0918 328 206','Maršova - Rašov','0',''],
                 'petrovice':['Obecný úrad','','Petrovice','80','013 53','Petrovice','obecpetrovice@stonline.sk','041','558 90 09,558 90 54','0907 771 560','Petrovice','1',''],
                 'predmier':['Obecný úrad','','Bajzova','55','013 51','Predmier','obecnyurad@predmier.sk','041','557 31 81, 557 33 77','0905 891 105','Predmier','0',''],
-                'stiavnik':['Obecný úrad','','Štiavnik','764','013 55','Štiavnik','starosta@stiavnik.sk','041','558 30 07,558 31 15','0905 25 40 37','Štiavnik','0',''],
+                'stiavnik':['Obecný úrad','','Štiavnik','764','013 55','Štiavnik','ocu@stiavnik.sk','041','558 30 07,558 31 15','0905 25 40 37','Štiavnik','0',''],
                 'sulov-hradna':['Obecný úrad','','Súľov - Hradná','65','013 52','Súľov - Hradná','urad@sulov-hradna.sk','041','557 40 16','0903 543 337','Súľov - Hradná','1',''],
                 'velke-rovne':['Obecný úrad','','Veľké Rovné','1621','013 62','Veľké Rovné','jana.micietova@velkerovne.sk','041','558 23 41, 558 23 14','0903 550 087,0911 803 704,0911 885 033','Veľké Rovné','1','']},
             'Okres Dolný Kubín':{'1dolny-kubin':['Mestský úrad','','Hviezdoslavove námestie','1651/2','026 01','Dolný Kubín','petra.sarfy@dolnykubin.sk','043','581 44 11,49.54,64','','Dolný Kubín','0',''],
