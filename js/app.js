@@ -439,7 +439,7 @@ function replaceDiacritics(str) {
 
         var text = `Žiadosť o vydanie hlasovacieho preukazu pre voľby prezidenta SR v roku 2019.
 
-Podľa §46 zákona č.180/2014 Z.z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o vydanie hlasovacieho preukazu pre voľby prezidenta Slovenskej republiky v roku 2019.
+Podľa § 46 zákona č. 180/2014 Z.z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov žiadam o vydanie hlasovacieho preukazu pre voľby prezidenta Slovenskej republiky v roku 2019.
 
 Moje údaje sú
 Meno a priezvisko: $1
@@ -466,7 +466,7 @@ Hlasovací preukaz prosím vydať nasledovnej splnocnenej osobe priamo v mieste 
 
         text += `
 
-Žiadam o hlasovací preukaz platný pre dni 16. marca 2019 a 30. marca 2019.
+Žiadam o hlasovací preukaz platný pre 30. marca 2019 (druhé kolo volieb).
 
 Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
 
