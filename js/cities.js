@@ -2666,7 +2666,7 @@
                 'svedernik':['Obecný úrad','','Svederník','48','013 32','Dlhé Pole','urad@svedernik.info','041','569 61 29','0905 310 625,0915 836141 ','Svederník','0',''],
                 'teplicka-nad-vahom':['Obecný úrad','','Nám. sv. Floriána','290/2','013 01','Teplička nad Váhom','sekretariat@teplickanadvahom.sk','041','598 21 28','0904 800 015,0904 800 016','Teplička nad Váhom','0',''],
                 'terchova':['Obecný úrad','','Sv. Cyrila a Metoda','96','013 06','Terchová','starosta@terchova.sk','041','569 51 38,500 21 00,01','0903 941 044','Terchová','1',''],
-                'turie':['Obecný úrad','','Hlavná','214','013 12','Turie','obecturie@rajec.net','041','598 91 72,93 13','','Turie','0',''],
+                'turie':['Obecný úrad','','Hlavná','214','013 12','Turie','info@obecturie.sk','041','598 91 72,93 13','','Turie','0',''],
                 'varin':['Obecný úrad','','Nám. sv. Floriána','1','013 03','Varín','podatelna@varin.sk','041','569 22 16, 569 23 22,569 26 56','0911 704 772','Varín','0',''],
                 'velka-cierna':['Obecný úrad','','Veľká Čierna','75','015 01','Rajec','obecvelkacierna@gmail.com','041','542 22 95','0908 774 516','Veľká Čierna','1',''],
                 'visnove':['Obecný úrad','','Višňové','556','013 23','Višňové','urad@visnove.sk','041','597 23 81,597 23 51','','Višňové','1','',1],
