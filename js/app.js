@@ -629,9 +629,9 @@ Zároveň žiadam o zaslanie potvrdenia, že ste túto žiadosť obdržali.
         $("#residence-out").on("click", function() { setQuery({ residence: "out", step: "4" }) }); // v zahranici
 
         // prevezmem
-        $("#whom-home").on("click", function() { setQuery({ whom: "home", step: "3" }) }); // dorucit domov
-        $("#whom-other").on("click", function() { setQuery({ whom: "other", step: "3" }) }); // dorucit inde
-        $("#whom-someone").on("click", function() { setQuery({ whom: "someone", step: "3" }) }); // splnomocnenec
+        // $("#whom-home").on("click", function() { setQuery({ whom: "home", step: "3" }) }); // dorucit domov
+        // $("#whom-other").on("click", function() { setQuery({ whom: "other", step: "3" }) }); // dorucit inde
+        // $("#whom-someone").on("click", function() { setQuery({ whom: "someone", step: "3" }) }); // splnomocnenec
         $("#whom-personally").on("click", function() { setQuery({ whom: "personally", step: "5" }) }); // osobne
     }
 
